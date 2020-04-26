@@ -1,0 +1,82 @@
+$red: #fc7390;
+$blue: #6c63ff;
+$gray: #2b2b30;
+
+.card-container {
+	background: rgba(228, 228, 228, 0.9);
+	border-radius: 0.2em;
+	max-width: 60%;
+	font-size: 1.5em;
+	margin: 0.7em auto;
+	padding: 1em;
+	color: $gray;
+	transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.card-header {
+	display: flex;
+	background: transparent !important;
+	border: none !important;
+}
+.card-header.reverse {
+	flex-direction: row-reverse;
+	.card-title {
+		text-align: right;
+	}
+}
+.card-title {
+	flex-grow: 4;
+	font-weight: 600;
+	text-align: left;
+	margin-bottom: 0;
+}
+.arrow {
+	color: $blue;
+	margin-top: 0.3em;
+	flex-grow: 0;
+	cursor: pointer;
+	transform: rotate(0deg);
+	transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.arrow.rotate {
+	transform: rotate(180deg);
+	margin-bottom: 1em;
+}
+.card-body {
+	display: none;
+	transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.card-body.show {
+	display: block;
+}
+.card-description {
+	text-align: left;
+	font-size: 0.8em;
+}
+.card-description.reverse {
+	text-align: right;
+}
+.contact-btn {
+	background: $blue;
+	color: #fff;
+	padding: 0.3em 0.5em;
+	text-decoration: none;
+	font-size: 0.8em;
+	border-radius: 0.2em;
+	margin-top: 0.5em;
+	display: inline-block;
+	transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.contact-btn:hover {
+	text-decoration: none;
+	color: #fff;
+	transform: scale(1.05);
+}
+@media only screen and (max-width: 600px) {
+	.card-container {
+		max-width: 90%;
+		font-size: 1.3em;
+		margin: 1em auto;
+		padding: 0.7em;
+	}
+}

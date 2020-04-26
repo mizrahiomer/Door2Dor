@@ -1,0 +1,39 @@
+$blue: #6c63ff;
+
+.footer {
+	height: 10%;
+}
+.footer-grid {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1em;
+	align-items: center;
+}
+.taglit-logo {
+	width: 4em;
+}
+.footer-link {
+	text-decoration: none;
+	color: #fff;
+	transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.footer-link.me {
+	margin-left: 0.2em;
+}
+.footer-link:hover {
+	text-decoration: none;
+	color: $blue;
+}
+.powered {
+	text-align: right;
+	color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+	.taglit-logo {
+		width: 3.5em;
+	}
+	.footer-grid {
+		font-size: 0.65em;
+	}
+}
