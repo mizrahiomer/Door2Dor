@@ -18,8 +18,8 @@ const Footer = () => {
 				</a>
 
 				<div className='powered'>
-					Powered in
-					<span role='img' aria-label=''>
+					Powered with
+					<span className='heart' role='img' aria-label=''>
 						💜
 					</span>
 					by
